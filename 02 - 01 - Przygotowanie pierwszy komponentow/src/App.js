@@ -6,7 +6,7 @@ import MyComponent from './components/MyComponent/MyComponent';
 const App = () => (
     <div>
         <MyComponent />
-       <ListWrapper />
+        <ListWrapper />
     </div>
 );
 
