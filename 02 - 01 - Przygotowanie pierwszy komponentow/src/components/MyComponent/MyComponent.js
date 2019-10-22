@@ -12,6 +12,7 @@ class MyComponent extends React.Component {
     render() {
         return (
             <>
+                <label>Tutaj tekst nowy</label>
                 <input 
                     placeholder="your text" 
                     onChange={this.handleChange}
