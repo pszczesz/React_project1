@@ -17,7 +17,7 @@ function TodoList(props) {
     const handleButtonClick = () => {
         // setTodoList([...todoList,inputValue]);
         // setInputValue("");
-        const {todos} = todoListState;
+        const { todos } = todoListState;
         setTodoListState({
             todos: [...todos, inputValue],
             inputValue: ""
