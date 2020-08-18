@@ -6,20 +6,32 @@ class Form extends React.Component {
           lastName: '',
           username: '',
           email: '',
-          password: ','
+          password: ''
 
       }
 
   render() {
       console.log(this.state);
     return (
+      <>
         <form>
-            <input 
-            placeholder="first name"
-            value={this.state.firstName}
-            onChange={(e)=>{this.setState({firstName: e.target.value})}}
-            />
+            <div>
+              <input 
+              placeholder="first name"
+              value={this.state.firstName}
+              onChange={(e)=>{this.setState({firstName: e.target.value})}}
+              />
+            </div>
+            <div>
+              <input 
+              placeholder="last name"
+              value={this.state.lastName}
+              onChange={(e)=>{this.setState({lastName: e.target.value})}}
+              />
+            </div>
         </form>
+    <h3>Imię: {this.state.firstName} Nazwisko: {this.state.lastName}</h3>
+        </>
     );
   }
 
