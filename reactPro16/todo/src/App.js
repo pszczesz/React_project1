@@ -47,7 +47,7 @@ export default class App extends Component {
         { action: this.state.newItemText, done: false }],
         newItemText: ""
       });
-      console.log(this.state.todoItems)
+      console.log(this.state);
     }
   }
   changeStateData = () => {
